@@ -65,11 +65,28 @@ Once upon a time, I wrote an open source Find and Replace tool:  https://findand
 It worked great, except people kept filing issues related to problems with escaping backslashes, quotes and new line breaks.  In GUI - everything worked ok, but as soon as the person would try to generate a command line - it wouldn't work the same way.
 
 After a bit of research I found an article which explains the problem:
+
 http://weblogs.asp.net/jgalloway/archive/2006/10/05/_5B002E00_NET-Gotcha_5D00_-Commandline-args-ending-in-_5C002200_-are-subject-to-CommandLineToArgvW-whackiness.aspx
 	
 The gist is:   
 > "Most apps (including .Net apps) use CommandLineToArgvW to decode their command lines.  It uses crazy escaping rules which explain the behaviour you're seeing."
 	
+CommandLineEncoder fixes the issues mentioned in the article. 
+
+
+Unit Tests
+----------
+
+There are learning tests that demonstarate the original issue:
+https://github.com/ericpopivker/Command-Line-Encoder/blob/master/CommandLineEncoder/CommandLineEncoder.Tests/LearningTests.cs
+
+There are also unit tests that verifies librariy functionality:
+https://github.com/ericpopivker/Command-Line-Encoder/blob/master/CommandLineEncoder/CommandLineEncoder.Tests/UtilsTest.cs
+
+
+In both cases - the automated tests work by instantianting a very simple command line EXE which writes the results to a temp text file, which is then read back by unit test after a short delay.
+
+
 
 
 
