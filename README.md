@@ -73,10 +73,10 @@ CommandLineEncoder fixes the issues mentioned in the article.  It also adds line
 Unit Tests
 ----------
 
-There are learning tests that demonstarate the original issue:
+There are learning tests that demonstarate the original issue:  
 https://github.com/ericpopivker/Command-Line-Encoder/blob/master/CommandLineEncoder/CommandLineEncoder.Tests/LearningTests.cs
 
-There are also unit tests that verifies librariy functionality:
+There are also unit tests that verifies librariy functionality:  
 https://github.com/ericpopivker/Command-Line-Encoder/blob/master/CommandLineEncoder/CommandLineEncoder.Tests/UtilsTest.cs
 
 
