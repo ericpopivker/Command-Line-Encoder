@@ -35,8 +35,7 @@ https://github.com/ericpopivker/Command-Line-Encoder/releases
 
 ```
 string args = String.Format("--someFlag1 --testVal \"{0}\" --someFlag2", 
-    								CommandLineEncoder.Utils.EncodeArgText(argText)
-    				  			);
+    								CommandLineEncoder.Utils.EncodeArgText(argText));
 System.Diagnostics.Process.Start(ApplicationExePath, args);
 ```		
 
