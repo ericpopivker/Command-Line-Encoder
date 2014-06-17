@@ -11,7 +11,7 @@ You can download the library from here:
 https://github.com/ericpopivker/Command-Line-Encoder/releases
 
 
-Or just copy the Utils class that let's you EncodeArgText and DecodeArgText from: 
+Or just copy the Utils class that let's you EncodeArgText and DecodeArgText from:    
 https://github.com/ericpopivker/Command-Line-Encoder/blob/master/CommandLineEncoder/CommandLineEncoder/Utils.cs
 
 
@@ -29,9 +29,9 @@ This CommandLineEncoder handles the following edge cases when using text argumen
 How to use
 ----------
 
-1) Either copy Utils.cs class into your project from:
-https://github.com/ericpopivker/Command-Line-Encoder/blob/master/CommandLineEncoder/CommandLineEncoder/Utils.cs
-or reference library from latest release in here:
+1) Either copy Utils.cs class into your project from:   
+https://github.com/ericpopivker/Command-Line-Encoder/blob/master/CommandLineEncoder/CommandLineEncoder/Utils.cs  
+or reference library from latest release in here:  
 https://github.com/ericpopivker/Command-Line-Encoder/releases
 
 2) Call CommandLineEncoder.EncodeArgText("Some Value") to encode text argument to use on command line.
@@ -67,7 +67,7 @@ http://weblogs.asp.net/jgalloway/archive/2006/10/05/_5B002E00_NET-Gotcha_5D00_-C
 The gist is:   
 > "Most apps (including .Net apps) use CommandLineToArgvW to decode their command lines.  It uses crazy escaping rules which explain the behaviour you're seeing."
 	
-CommandLineEncoder fixes the issues mentioned in the article. 
+CommandLineEncoder fixes the issues mentioned in the article.  It also adds line break handling.
 
 
 Unit Tests
