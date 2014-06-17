@@ -29,14 +29,12 @@ This CommandLineEncoder handles the following edge cases when using text argumen
 How to use
 ----------
 
-1. Either copy Utils.cs class into your project from:
+1) Either copy Utils.cs class into your project from:
 https://github.com/ericpopivker/Command-Line-Encoder/blob/master/CommandLineEncoder/CommandLineEncoder/Utils.cs
-
 or reference library from latest release in here:
 https://github.com/ericpopivker/Command-Line-Encoder/releases
 
-
-2. Call CommandLineEncoder.EncodeArgText("Some Value") to encode text argument to use on command line.
+2) Call CommandLineEncoder.EncodeArgText("Some Value") to encode text argument to use on command line.
 
 ```
 string args = String.Format("--someFlag1 --testVal \"{0}\" --someFlag2", 
@@ -44,10 +42,8 @@ string args = String.Format("--someFlag1 --testVal \"{0}\" --someFlag2",
     				  			);
 System.Diagnostics.Process.Start(ApplicationExePath, args);
 ```		
-    					
 
-
-3. Use  CommandLineEncoder.DecodeArgText() to decode text argument from command line
+3) Use  CommandLineEncoder.DecodeArgText() to decode text argument from command line
 
 ```
 static void Main(string[] args)
