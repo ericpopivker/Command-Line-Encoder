@@ -1,7 +1,7 @@
 Command Line Encoder
 ====================
 
-Using this library you can safely encode text arguments to command line.
+Using this library you can safely encode/escape text arguments on command line.
 
 
 You can download the library from here:       
